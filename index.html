@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Cá Nhân</title>
+    <meta name="description" content="Trang web giới thiệu cá nhân độc đáo và sáng sủa.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">MyPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Giới Thiệu</a></li>
+                <li><a href="#about">Về Tôi</a></li>
+                <li><a href="#projects">Dự Án</a></li>
+                <li><a href="#contact">Liên Hệ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content glass-card">
+                <span class="badge">Xin chào, tôi là</span>
+                <h1>Nhà Phát Triển <br><span class="gradient-text">Sáng Tạo</span></h1>
+                <p>Chào mừng bạn đến với không gian cá nhân của tôi. Tôi đam mê tạo ra những trải nghiệm độc đáo, sáng sủa và mang lại giá trị thực tế cho người dùng.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary-btn">Xem Dự Án</a>
+                    <a href="#contact" class="btn secondary-btn">Liên Hệ Ngay</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="./assets/profile.png" alt="Ảnh đại diện">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2 class="section-title">Về Bản Thân</h2>
+            <div class="about-container glass-card">
+                <div class="about-text">
+                    <h3>Hành trình của sự sáng tạo</h3>
+                    <p>Tôi luôn tin rằng thiết kế đẹp không chỉ nằm ở vẻ bề ngoài mà còn ở cách nó hoạt động. Với tư duy logic và con mắt thẩm mỹ, tôi biến những ý tưởng phức tạp thành những giao diện đơn giản, dễ sử dụng nhưng vẫn giữ được nét độc đáo riêng.</p>
+                    <div class="skills">
+                        <span class="skill-tag">HTML5 & CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">UI/UX Design</span>
+                        <span class="skill-tag">Sáng Tạo</span>
+                        <span class="skill-tag">Giải Quyết Vấn Đề</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2 class="section-title">Dự Án Nổi Bật</h2>
+            <div class="project-grid">
+                <div class="project-card glass-card">
+                    <img src="./assets/project1.png" alt="Dự án 1" class="project-img">
+                    <div class="project-info">
+                        <h3>Dashboard Quản Trị</h3>
+                        <p>Thiết kế giao diện quản trị hiện đại, tối ưu hóa trải nghiệm người dùng với phong cách sáng sủa và tập trung vào dữ liệu.</p>
+                        <a href="#" class="project-link">Xem chi tiết &rarr;</a>
+                    </div>
+                </div>
+                <div class="project-card glass-card">
+                    <img src="./assets/project2.png" alt="Dự án 2" class="project-img">
+                    <div class="project-info">
+                        <h3>Ứng Dụng Di Động</h3>
+                        <p>Thiết kế ứng dụng di động mượt mà, màu sắc nổi bật, mang lại sự tiện dụng cao nhất cho người sử dụng.</p>
+                        <a href="#" class="project-link">Xem chi tiết &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2 class="section-title">Kết Nối Với Tôi</h2>
+            <div class="contact-card glass-card">
+                <p>Bạn có ý tưởng hay một dự án thú vị? Hãy cùng nhau biến nó thành hiện thực!</p>
+                <form id="contact-form" class="contact-form" onsubmit="event.preventDefault(); alert('Cảm ơn bạn đã liên hệ!');">
+                    <input type="text" placeholder="Tên của bạn" required>
+                    <input type="email" placeholder="Email của bạn" required>
+                    <textarea placeholder="Tin nhắn..." rows="4" required></textarea>
+                    <button type="submit" class="btn primary-btn">Gửi Tin Nhắn</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bản quyền thuộc về tôi. Thiết kế với sự đam mê.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
